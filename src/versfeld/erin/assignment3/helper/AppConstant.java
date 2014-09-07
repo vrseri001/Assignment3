@@ -3,6 +3,11 @@ package versfeld.erin.assignment3.helper;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * This class stores a series of constant static values which will be used across the application
+ * @author Erin Versfeld VRSERI001
+ * @date 7 September 2014
+ */
 public class AppConstant {
 	
 	//number of columns in which the images are displayed
