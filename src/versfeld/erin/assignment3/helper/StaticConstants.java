@@ -8,7 +8,7 @@ import java.util.List;
  * @author Erin Versfeld VRSERI001
  * @date 7 September 2014
  */
-public class AppConstant {
+public class StaticConstants {
 	
 	//number of columns in which the images are displayed
 	public static final int NUMBER_OF_COLUMNS = 3;

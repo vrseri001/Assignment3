@@ -43,7 +43,7 @@ public class Utils {
 		//gets the top level external storage directory for the images, followed by the specific separator used by the OS
 		//and ending with the location of the photos
 		File directory = new File(android.os.Environment.getExternalStorageDirectory()
-				+File.separator+AppConstant.PHOTO_ALBUM);
+				+File.separator+StaticConstants.PHOTO_ALBUM);
 		
 		if(directory.isDirectory()){
 			
@@ -69,7 +69,7 @@ public class Utils {
 			
 			else{
 				//Toast class provides feedback in a simple pop-up
-				Toast.makeText(this.context, AppConstant.PHOTO_ALBUM+
+				Toast.makeText(this.context, StaticConstants.PHOTO_ALBUM+
 						" is empty.Please load some images into it.", Toast.LENGTH_LONG).show();
 			}
 		}
@@ -78,7 +78,7 @@ public class Utils {
 			//displays an alert message
 			AlertDialog.Builder alert = new AlertDialog.Builder(this.context);
 			alert.setTitle("Error!");
-			alert.setMessage(AppConstant.PHOTO_ALBUM +
+			alert.setMessage(StaticConstants.PHOTO_ALBUM +
 					" directory path is not valid! Please set the image directory name in the AppConstant.java class");
 			alert.setPositiveButton("OK", null);
 			alert.show();
@@ -101,7 +101,7 @@ public class Utils {
 		//Locale represents a variant combination. This allows for the app to check the file extension
 		//of alternative scripts, such as Arabic, accurately
 		//This step also involved converting the extension to all lower case letters
-		if(AppConstant.FILE_EXTENSIONS.contains(extension.toLowerCase(Locale.getDefault()))){
+		if(StaticConstants.FILE_EXTENSIONS.contains(extension.toLowerCase(Locale.getDefault()))){
 			return true;
 		}
 		
